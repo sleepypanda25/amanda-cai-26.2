@@ -1,7 +1,3 @@
 # amanda-cai-26.2
+Name: Amanda Cai
 Intro to Programming course for Code the Dream
-
-// hi
-// this is a change
-// this is another change
-// this is a 3rd change
