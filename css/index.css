@@ -27,6 +27,7 @@ body {
     display: flex;
     background-color: #202f4a;
     color: white;
+    padding: 5px 20px;
 }
 
 .connect {
