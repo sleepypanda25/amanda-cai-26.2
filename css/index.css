@@ -26,6 +26,7 @@ body {
 .experience_list {
     display: flex;
     background-color: #202f4a;
+    color: white;
 }
 
 .connect {
