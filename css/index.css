@@ -26,7 +26,12 @@ body {
 .experience_list {
     display: flex;
     background-color: #202f4a;
-    color: white;
+    padding: 5px 20px;
+}
+
+.experience_list div {
+    width: 100px;
+    background-color: white;
     padding: 5px 20px;
 }
 
