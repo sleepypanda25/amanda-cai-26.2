@@ -3,3 +3,15 @@ body {
     color: #202f4a;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.about {
+    padding-bottom: 40px;
+}
+
+.experience {
+    padding-bottom: 40px;
+}
+
+.connect {
+    padding-bottom: 40px;
+}
