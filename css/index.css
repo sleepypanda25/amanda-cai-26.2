@@ -4,14 +4,31 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.name {
+    font-family: cursive;
+}
+
 .about {
     padding-bottom: 40px;
+    text-align: center;
+}
+
+.about_header {
+    font-size: 60px;
+    font-weight: 400;
+    color: red;
 }
 
 .experience {
     padding-bottom: 40px;
 }
 
+.experience_list {
+    display: flex;
+    background-color: #202f4a;
+}
+
 .connect {
     padding-bottom: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
