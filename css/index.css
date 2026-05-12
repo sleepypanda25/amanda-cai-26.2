@@ -77,13 +77,16 @@ body {
 }
 
 .instagram {
+    margin: 5px;
     color: red;
 }
 
 .linkedin {
+    margin: 5px;
     color: purple;
 }
 
 .github {
+    margin: 5px;
     color: pink;
 }
