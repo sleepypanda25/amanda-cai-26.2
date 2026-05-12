@@ -29,6 +29,7 @@ body {
 }
 
 .python {
+    color: white;
     padding: 20px 20px;
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .html {
-    background-color: white;
+    color: white;
     padding: 20px 20px;
 }
 
@@ -48,7 +49,7 @@ body {
 }
 
 .c {
-    background-color: white;
+    color: white;
     padding: 20px 20px;
 }
 
