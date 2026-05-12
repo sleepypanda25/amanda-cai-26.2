@@ -41,3 +41,15 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: red;
 }
+
+.instagram {
+    color: red;
+}
+
+.linkedin {
+    color: purple;
+}
+
+.github {
+    color: pink;
+}
