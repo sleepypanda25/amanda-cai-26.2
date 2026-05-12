@@ -72,6 +72,10 @@ body {
     color: red;
 }
 
+.connect div {
+    display: flex;
+}
+
 .instagram {
     color: red;
 }
