@@ -25,26 +25,32 @@ body {
 
 .assistant_coach {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .python {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .java {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .html {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .css {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .c {
     background-color: white;
+    padding: 20px 20px;
 }
 
 .experience_list {
@@ -57,7 +63,6 @@ body {
     width: 100px;
     padding: 5px 20px;
     text-wrap-mode: wrap;
-    padding: 20px 20px;
 }
 
 .connect {
