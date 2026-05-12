@@ -57,6 +57,7 @@ body {
     display: flex;
     background-color: #202f4a;
     color: black;
+    padding: 20px 20px;
 }
 
 .experience_list div {
