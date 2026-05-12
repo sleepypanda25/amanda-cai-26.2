@@ -24,31 +24,37 @@ h2 {
 }
 
 .assistant_coach {
+    width: 100px;
     background-color: white;
     padding: 20px 20px;
 }
 
 .python {
+    width: 100px;
     color: white;
     padding: 20px 20px;
 }
 
 .java {
+    width: 100px;
     background-color: white;
     padding: 20px 20px;
 }
 
 .html {
+    width: 100px;
     color: white;
     padding: 20px 20px;
 }
 
 .css {
+    width: 100px;
     background-color: white;
     padding: 20px 20px;
 }
 
 .c {
+    width: 100px;
     color: white;
     padding: 20px 20px;
 }
