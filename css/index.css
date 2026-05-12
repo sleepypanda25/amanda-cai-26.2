@@ -23,6 +23,30 @@ body {
     padding-bottom: 40px;
 }
 
+.assistant_coach {
+    background-color: white;
+}
+
+.python {
+    background-color: white;
+}
+
+.java {
+    background-color: white;
+}
+
+.html {
+    background-color: white;
+}
+
+.css {
+    background-color: white;
+}
+
+.c {
+    background-color: white;
+}
+
 .experience_list {
     display: flex;
     background-color: #202f4a;
