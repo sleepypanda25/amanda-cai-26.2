@@ -1,6 +1,5 @@
 const footerElement = document.createElement("footer");
 footerElement.className = "footer";
-footerElement.innerHTML = "This is a footer";
 document.body.appendChild(footerElement);
 
 const today = new Date();
@@ -11,7 +10,7 @@ const footer = document.querySelector(".footer");
 const copyright = document.createElement("p");
 copyright.className = "copyright";
 copyright.innerHTML = `&copy; Amanda Cai ${thisYear}`;
-footer.body.appendChild(copyright);
+footer.appendChild(copyright);
 
 const skills = ["Java", "Python", "C", "JavaScript", "HTML", "CSS", "GitHub"];
 const skillsSection = document.querySelector(".skills");
