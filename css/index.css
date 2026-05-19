@@ -95,3 +95,28 @@ h2 {
     margin: 5px;
     color: pink;
 }
+
+@media (max-width: 449px) {
+    .skills-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-list li{
+        margin: 10px;
+        border-width: 5px;
+    }
+}
+
+@media (min-width: 450px) {
+    .skills-list{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .skills-list li{
+        margin: 10px;
+    }
+}
