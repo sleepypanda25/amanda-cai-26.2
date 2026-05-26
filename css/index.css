@@ -115,13 +115,7 @@ h2 {
         max-width: 500px;
     }
 
-    button[type="remove"] {
-        width: 100%;
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    button[type="submit"] {
+    button[type="button"] {
         width: 100%;
         padding: 20px;
         font-size: 20px;
