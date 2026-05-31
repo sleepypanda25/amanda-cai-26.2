@@ -50,3 +50,27 @@ messageForm.addEventListener('submit', function(event) {
 
     messageForm.reset();
 })
+
+fetch('https://api.github.com/users/sleepypanda25/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+        return response.json();
+    })
+    .then(data => {
+        const repositories = data;
+        console.log(repositories);
+
+        const projectSection = document.querySelector("#Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred:', error);
+    })
