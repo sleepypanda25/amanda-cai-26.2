@@ -50,3 +50,35 @@ messageForm.addEventListener('submit', function(event) {
 
     messageForm.reset();
 })
+
+/* --POSSIBLY DELETE--
+
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.github.com/users/sleepypanda25/repos');
+
+        if (!response.ok) {
+            throw new Error(`Error!!`);
+        }
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Fetch failed:', error);
+    }
+}
+
+fetchData();
+*/
+
+fetch('https://api.github.com/users/sleepypanda25/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+        return response.json();
+    })
+    .then(data => {
+        const repositories = JSON.parse(this.response)
+        console.log(repositories);
+    })
