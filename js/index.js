@@ -51,26 +51,6 @@ messageForm.addEventListener('submit', function(event) {
     messageForm.reset();
 })
 
-/* --POSSIBLY DELETE--
-
-async function fetchData() {
-    try {
-        const response = await fetch('https://api.github.com/users/sleepypanda25/repos');
-
-        if (!response.ok) {
-            throw new Error(`Error!!`);
-        }
-
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Fetch failed:', error);
-    }
-}
-
-fetchData();
-*/
-
 fetch('https://api.github.com/users/sleepypanda25/repos')
     .then(response => {
         if (!response.ok) {
@@ -79,6 +59,18 @@ fetch('https://api.github.com/users/sleepypanda25/repos')
         return response.json();
     })
     .then(data => {
-        const repositories = JSON.parse(this.response)
+        const repositories = data;
         console.log(repositories);
+
+        const projectSection = document.querySelector("#Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred:', error);
     })
