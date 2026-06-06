@@ -1,6 +1,6 @@
 const api_key = "live_eQz4jg8FjS2mAigaK9iRmwiQRbv16polxYxgpngAx5WJxGHrEVWuFvjcR0IQPcSm";
 
-fetch(`https://api.thecatapi.com/v1/images/search?limit=19`, {
+fetch(`https://api.thecatapi.com/v1/images/search?limit=18`, {
     headers: {
         'x-api-key': api_key
     }
@@ -24,4 +24,22 @@ fetch(`https://api.thecatapi.com/v1/images/search?limit=19`, {
     })
     .catch(function(error) {
         console.log(error)
+    })
+
+fetch(`https://api.thecatapi.com/v1/images/oGefY4YoG`, {
+    headers: {
+        'x-api-key': api_key
+    }
+})
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        let imageData = data;
+        let image = document.createElement('img');
+        image.src = `${imageData.url}`;
+        document.getElementById('sort-breed').appendChild(image);
+    })
+    .catch(function(error) {
+        console.log(error);
     })
