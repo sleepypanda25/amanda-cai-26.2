@@ -1,8 +1,8 @@
 const api_key = "live_eQz4jg8FjS2mAigaK9iRmwiQRbv16polxYxgpngAx5WJxGHrEVWuFvjcR0IQPcSm";
 
-fetch("//https://api.thecatapi.com/v1/images/search?breed_ids=ragd", {
+fetch(`https://api.thecatapi.com/v1/images/search?limit=19`, {
     headers: {
-        "x-api-key": api_key
+        'x-api-key': api_key
     }
 })
     .then((response) => {
@@ -14,11 +14,14 @@ fetch("//https://api.thecatapi.com/v1/images/search?breed_ids=ragd", {
             let image = document.createElement('img');
             image.src = `${imageData.url}`;
 
-            let gridCel = document.createElement('div');
+            let gridCell = document.createElement('div');
             gridCell.classList.add('col');
             gridCell.classList.add('col-lg');
             gridCell.appendChild(image)
+
+            document.getElementById('grid').appendChild(gridCell);
         })
     })
-
-document.getElementById('grid').appendChild(gridCell);
+    .catch(function(error) {
+        console.log(error)
+    })
