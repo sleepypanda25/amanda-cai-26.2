@@ -1,64 +1,73 @@
+/* all of body */
 body {
     background-color: #bcdbf5;
     color: #202f4a;
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* name  in top left corner */
 .name {
-    font-family: cursive;
+    color:rgb(13, 43, 124);
 }
 
+/* about section */
 .about {
     padding-bottom: 40px;
     text-align: center;
 }
 
+/* all section headers */
 h2 {
     font-size: 60px;
     font-weight: 400;
-    color: red;
+    color: rgb(13, 43, 124);
 }
 
+/* experience section */
 .experience {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 40px;
 }
 
+/* experiences */
 .assistant_coach {
-    width: 100px;
+    width: auto;
     background-color: white;
     padding: 20px 20px;
 }
 
 .python {
-    width: 100px;
+    width: auto;
     color: white;
     padding: 20px 20px;
 }
 
 .java {
-    width: 100px;
+    width: auto;
     background-color: white;
     padding: 20px 20px;
 }
 
 .html {
-    width: 100px;
+    width: auto;
     color: white;
     padding: 20px 20px;
 }
 
 .css {
-    width: 100px;
+    width: auto;
     background-color: white;
     padding: 20px 20px;
 }
 
 .c {
-    width: 100px;
+    width: auto;
     color: white;
     padding: 20px 20px;
 }
 
+/* experience list */
 .experience_list {
     display: flex;
     background-color: #202f4a;
@@ -66,48 +75,64 @@ h2 {
     padding: 20px 20px;
 }
 
+/* experience list elements */
 .experience_list div {
-    width: 100px;
+    width: 70px;
     padding: 5px 20px;
 }
 
+/* connect section */
 .connect {
     padding-bottom: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: red;
 }
 
+/* connect section elements */
 .connect div {
     display: flex;
+    margin: 10px;
+    background-color: white;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+}
+
+/* connect links */
+.email {
+    padding: 5px 10px;
+    color:#202f4a;
 }
 
 .instagram {
-    margin: 5px;
+    padding: 5px 10px;
     color: red;
 }
 
 .linkedin {
-    margin: 5px;
+    padding: 5px 10px;
     color: purple;
 }
 
 .github {
-    margin: 5px;
+    padding: 5px 10px;
     color: pink;
 }
 
+/* small screen */
 @media (max-width: 449px) {
+    /* skills list */
     .skills-list{
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
+    /* skills list elements */
     .skills-list li{
         margin: 10px;
         border-width: 5px;
     }
 
+    /* messages list */
     #messages_list{
         display: flex;
         flex-direction: column;
@@ -115,18 +140,21 @@ h2 {
         max-width: 500px;
     }
 
+    /* submit and remove buttons */
     button[type="button"] {
         width: 100%;
         padding: 20px;
         font-size: 20px;
     }
 
+    /* message form inputs boxes */
     .input {
         width: 100%;
         padding: 10px;
         font-size: 20px;
     }
 
+    /* projects list */
     #projects_list {
         display: flex;
         flex-direction: column;
@@ -134,6 +162,7 @@ h2 {
         max-width: 500px;
     }
 
+    /* projects list elements */
     #projects_list li{
         background-color: white;
         width: max-content;
@@ -141,17 +170,21 @@ h2 {
     }
 }
 
+/* large screen */
 @media (min-width: 450px) {
+    /* skills list */
     .skills-list{
         display: flex;
         flex-direction: row;
         gap: 20px;
     }
 
+    /* skills list elements */
     .skills-list li{
         margin: 10px;
     }
 
+    /* messages list */
     #messages_list{
         display: flex;
         flex-direction: column;
@@ -159,10 +192,12 @@ h2 {
         max-width: 500px;
     }
 
+    /* message form inputs boxes */
     .input {
         margin: 10px 0px;
     }
 
+    /* projects list */
     #projects_list {
         display: flex;
         flex-direction: row;
@@ -170,6 +205,7 @@ h2 {
         max-width: 500px;
     }
 
+    /* projects list elements */
     #projects_list li{
         background-color: white;
         width: auto;
